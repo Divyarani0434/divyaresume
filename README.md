@@ -1,1 +1,0 @@
-# divyaresume.github.com
