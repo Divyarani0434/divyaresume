@@ -12,12 +12,12 @@ else{
    
 if(isset($_POST['submit'])){
         session_start();
-        $name=$_POST['name'];
-        $email=$_POST['email'];
-        $choose=$_POST['about'];
-        $message=$_POST['message'];
+        $name=$_POST['Name'];
+        $email=$_POST['Email'];
+        $choose=$_POST['About'];
+        $message=$_POST['Message'];
 		
-		$sql = "insert into contact(name,email,choose,message) value('".$name."', '".$email."', '".$about."','".$message."')";
+		$sql = "insert into contact(name,email,about,message) value('".$Name."', '".$Email."', '".$About."','".$Message."')";
 		$result = mysqli_query($conn, $sql);
 		if($result){
         
