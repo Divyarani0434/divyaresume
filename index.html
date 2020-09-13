@@ -1,3 +1,9 @@
+<?php 
+session_start();
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -474,7 +480,7 @@
         </div>
 
         <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          <div class="col-md-6 col-lg-4 d-flex ftco-animate">
           	<div class="align-self-stretch box text-center p-4 shadow">
           		<div class="icon d-flex align-items-center justify-content-center">
           			<span class="icon-map-signs"></span>
@@ -482,10 +488,11 @@
           		<div>
 	          		<h3 class="mb-4">Address</h3>
 		            <p>Vijayawada</p>
+		            
 		          </div>
 	          </div>
           </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          <div class="col-md-6 col-lg-4 d-flex ftco-animate">
           	<div class="align-self-stretch box text-center p-4 shadow">
           		<div class="icon d-flex align-items-center justify-content-center">
           			<span class="icon-phone2"></span>
@@ -496,7 +503,7 @@
 	            </div>
 	          </div>
           </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          <div class="col-md-6 col-lg-4 d-flex ftco-animate">
           	<div class="align-self-stretch box text-center p-4 shadow">
           		<div class="icon d-flex align-items-center justify-content-center">
           			<span class="icon-paper-plane"></span>
@@ -507,22 +514,11 @@
 		          </div>
 	          </div>
           </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box text-center p-4 shadow">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-globe"></span>
-          		</div>
-          		<div>
-	          		<h3 class="mb-4">Website</h3>
-		            <p><a href="https://divyarani0434.github.io/divyaresume.github.com/">divyarani0434.github.io/divyaresume.github.com//a></p>
-	            </div>
-	          </div>
-          </div>
-        </div>
+       </div>
 
         <div class="row no-gutters block-9">
           <div class="col-md-6 order-md-last d-flex">
-            <form action="#" class="bg-light p-4 p-md-5 contact-form">
+            <form method="get" action="contact.php" class="bg-light p-4 p-md-5 contact-form">
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="Your Name">
               </div>
@@ -543,7 +539,8 @@
           </div>
 
           <div class="col-md-6 d-flex">
-          	<div class="img" style="background-image: url(images/about.JPG);"></div>
+          	<div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5213.90754396872!2d80.66015647159166!3d16.488308103022305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35fae9ca626ccd%3A0x1aef3d60096c210b!2sSanthi%20Nagar%2C%20Benz%20Circle%2C%20Vijayawada%2C%20Andhra%20Pradesh%20520010!5e0!3m2!1sen!2sin!4v1599995750867!5m2!1sen!2sin" width="400" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" padding="0px"></iframe></div>
+          	
           </div>
         </div>
       </div>
@@ -558,7 +555,7 @@
               <h2 class="ftco-heading-2">About</h2>
               <p>"life becomes a masterpiece when you learn to master peace"</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="https://github.com/Divyarani0434"><span class="icon-github"></span></a></li>
                 <li class="ftco-animate"><a href="https://www.facebook.com/venkata.lakshmi.336333"><span class="icon-facebook"></span></a></li>
                 <li class="ftco-animate"><a href="https://www.instagram.com/mom_iz_my_world/?hl=en"><span class="icon-instagram"></span></a></li>
               </ul>
@@ -592,8 +589,8 @@
             	<div class="block-23 mb-3">
 	              <ul>
 	                <li><span class="icon icon-map-marker"></span><span class="text">Vijayawada</span></li>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+91 911033 3572</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">divyarani0434@gmail.com</span></a></li>
+	                <li><span class="icon icon-phone"></span><span class="text"><a href="tel://9110333572">+91 911033 3572</a></span></li>
+	                <li><span class="icon icon-envelope"></span><span class="text"><a href="mailto:divyarani0434@gmail.com" style="padding-left: 10px">divyarani0434@gmail.com</a></span></li>
 	              </ul>
 	            </div>
             </div>
@@ -602,7 +599,7 @@
         <div class="row">
           <div class="col-md-12 text-center">
 
-            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            <p >
   Copyright &copy;<script>document.write(new Date().getFullYear());</script>  | <i class="icon-heart color-danger" aria-hidden="true"></i> by <a>Divya Rani </a>
 
           </div>

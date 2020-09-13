@@ -8408,14 +8408,15 @@ h1, h2, h3, h4, h5,
   .hero-wrap .hero-image {
     position: absolute;
     top: 0;
-    left:0px;
+    left:840px;
     right: 0;
     bottom: 0px;
     content: '';
     opacity:100%;
     width: 100%;
     background-image: url("images/hero.PNG");
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
+    float:right;
 
 
     
@@ -8424,6 +8425,7 @@ h1, h2, h3, h4, h5,
     .hero-image{
       left:10px;
       visibility: hidden;
+      margin-left: -880px
     }
   }
   .hero-wrap .text {
@@ -9107,7 +9109,7 @@ textarea.form-control {
 .ftco-footer {
   font-size: 16px;
   background: #000000;
-  padding: 7em 0;
+  padding: 2em 0;
   z-index: 0; }
   .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
@@ -9417,11 +9419,27 @@ textarea.form-control {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%; }
+   .contact-section .box .icon :hover {
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    color: #3e64ff }
+
 
 
     .contact-section .box .icon span {
       color: #fff;
       font-size: 30px; }
+    
+    
+    
+
   .contact-section .box h3 {
     font-size: 18px;
     font-weight: 600; }
