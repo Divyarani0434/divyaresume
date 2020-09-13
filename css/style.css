@@ -8413,7 +8413,7 @@ h1, h2, h3, h4, h5,
     bottom: 0px;
     content: '';
     opacity:100%;
-    width: 500px;
+    width: 100%;
     background-image: url("images/hero.png");
     background-repeat: no-repeat;
 
