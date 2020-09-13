@@ -8402,13 +8402,13 @@ h1, h2, h3, h4, h5,
     bottom: 0;
     content: '';
     opacity:.1;
-    width: 100%;
+    width: 50%;
     background: #3e64ff;
     }
   .hero-wrap .hero-image {
     position: absolute;
     top: 0;
-    left:0px;
+    left:20px;
     right: 0;
     bottom: 0px;
     content: '';
