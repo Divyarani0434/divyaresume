@@ -8414,7 +8414,7 @@ h1, h2, h3, h4, h5,
     content: '';
     opacity:100%;
     width: 100%;
-    background-image: url("images/hero.png");
+    background-image: url("images/hero.PNG");
     background-repeat: no-repeat;
 
 
