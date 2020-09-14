@@ -12,24 +12,24 @@ else{
    
 if(isset($_POST['submit'])){
         session_start();
-        $name=$_POST['Name'];
-        $email=$_POST['Email'];
-        $choose=$_POST['About'];
-        $message=$_POST['Message'];
+        $name=$_POST['name'];
+        $email=$_POST['email'];
+        $subject=$_POST['subject'];
+        $message=$_POST['message'];
 		
-		$sql = "insert into contact(name,email,about,message) value('".$Name."', '".$Email."', '".$About."','".$Message."')";
+		$sql = "insert into contact(name,email,subject,message) value('".$name."', '".$email."', '".$subject."','".$message."')";
 		$result = mysqli_query($conn, $sql);
 		if($result){
         
         $_SESSION['status']="we have Registered you";  
 		$_SESSION['status_code']="success";
-        header('Location:index.php');
+        header('Location:contact.php');
 
 		}
     else{
         $_SESSION['status']="Something went Wrong";  
 		$_SESSION['status_code']="error";
-        header('Location:index.php');
+        header('Location:contact.php');
     }
 	}
 
