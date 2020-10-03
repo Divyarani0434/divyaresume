@@ -57,8 +57,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
-  overflow-x: hidden; }
+  background-color: #fff; }
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -8246,7 +8245,7 @@ h1, h2, h3, h4, h5,
         padding-right: 0;
         padding-bottom: 1rem;
         padding-top: 0;
-        color: #3e64ff; } }
+        color: #fff; } }
   .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
     color: #fff;
     border: 1px solid #3e64ff;
@@ -8401,38 +8400,11 @@ h1, h2, h3, h4, h5,
     right: 0;
     bottom: 0;
     content: '';
-    opacity:.1;
+    opacity: .1;
     width: 50%;
-    background: #3e64ff;
-    }
-  .hero-wrap .hero-image {
-    position: absolute;
-    top: 0;
-    left:840px;
-    right: 0;
-    bottom: 0px;
-    content: '';
-    opacity:100%;
-    width: 100%;
-    background-image: url("images/hero.PNG");
-    background-repeat:no-repeat;
-    float:right;
-
-
-    
-    }
-  @media (max-width: 767.98px){
-    .hero-image{
-      left:10px;
-      visibility: hidden;
-      margin-left: -880px
-    }
-  }
+    background: #3e64ff; }
   .hero-wrap .text {
     width: 100%; }
-}
-
-  }
 
 .slider-text .subheading {
   text-transform: uppercase;
@@ -8670,8 +8642,7 @@ h1, h2, h3, h4, h5,
   display: inline-block;
   padding: 0;
   margin: 0;
-  width: 100%;
-   }
+  width: 100%; }
   .ftco-about ul.about-info li {
     list-style: none;
     margin-bottom: 10px; }
@@ -8692,7 +8663,7 @@ h1, h2, h3, h4, h5,
     color: #3e64ff; }
 
 #navi {
-  top: px;
+  top: 180px;
   position: -webkit-sticky;
   position: sticky;
   margin: 0; }
@@ -9109,7 +9080,7 @@ textarea.form-control {
 .ftco-footer {
   font-size: 16px;
   background: #000000;
-  padding: 2em 0;
+  padding: 7em 0;
   z-index: 0; }
   .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
@@ -9419,27 +9390,11 @@ textarea.form-control {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%; }
-   .contact-section .box .icon :hover {
-    width: 100px;
-    height: 100px;
-    background: #fff;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    border-radius: 50%;
-    color: #3e64ff }
-
 
 
     .contact-section .box .icon span {
       color: #fff;
       font-size: 30px; }
-    
-    
-    
-
   .contact-section .box h3 {
     font-size: 18px;
     font-weight: 600; }
@@ -9719,3 +9674,34 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+    element.style {
+      background-image: url(images/hero.PNG);
+  }
+.hero-wrap .hero-image {
+      position: absolute;
+      top: 0;
+      left: 840px;
+      right: 0;
+      bottom: 0px;
+      content: '';
+      opacity: 100%;
+      width: 100%;
+      background-image: url(images/hero.PNG);
+      background-repeat: no-repeat;
+      float: right;
+  }
+  @media (max-width: 767.98px){
+    .hero-image{
+      left:10px;
+      visibility: hidden;
+      margin-left: -880px
+    }
+  }
+  @media (max-width: 1200px){
+    .hero-image{
+      left:10px;
+      visibility: hidden;
+      margin-left: -880px
+    }
+  }
