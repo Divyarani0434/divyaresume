@@ -225,7 +225,7 @@
 					    	</div>
 					    	<div class="text pl-3">
 		    					<span class="date">May 2020 - Jun 2020</span>
-		    					<h2>Andriod App Development</h2>
+		    					<h2>Web Development</h2>
 		    					<span class="position">Internshala Trainings,Online</span>
 		    					<p>Successfully completed a six weeks online certied training on Web Development.The training consisted of HTML & CSS, Bootstrap, SQL and PHP modules. In the final assessment, I scored 89% marks.</p>
 		    				</div>
@@ -521,21 +521,32 @@
 
         <div class="row no-gutters block-9">
           <div class="col-md-6 order-md-last d-flex">
-            <form action="#" class="bg-light p-4 p-md-5 contact-form">
+		  <?php
+			$message="";
+			if(isset($_GET['error'])){
+				$message="Please fill all the details ";
+				echo '<div class="alert alert-danger">'.$message.'</div>';
+			}
+			if(isset($GET['success'])){
+				$message="Your Message has been Sent";
+				echo '<div class="alert alert-success">'.$message.'</div>';
+			}
+		  ?>
+            <form action="contact.php" method="post" class="bg-light p-4 p-md-5 contact-form">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name">
+                <input type="text" name="name"class="form-control" placeholder="Your Name" required>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Email">
+                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject">
+                <input type="text" name="subject" class="form-control" placeholder="Subject" required>
               </div>
               <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                <textarea name="" id="" name="message"cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
               </div>
               <div class="form-group">
-                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5" >
               </div>
             </form>
           
